@@ -78,9 +78,6 @@
         alert(`${score} letters, ${miss} misses, ${accuracy.toFixed(2)}% accuracy! ${median} letters/s`);
     }
 
-    function letterPerSecond() {
-    }
-
     window.addEventListener('click', () => {
         if (isPlaying === true) {
             return;
