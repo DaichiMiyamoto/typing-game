@@ -74,7 +74,11 @@
 
     function showResult() {
         const accuracy = score + miss === 0 ? 0 : score / (score + miss) *100;
-        alert(`${score} letters, ${miss} misses, ${accuracy.toFixed(2)}% accuracy!`);
+        const median = score === 0 ? 0 : (score / (timeLimit / 1000)).toFixed(4);
+        alert(`${score} letters, ${miss} misses, ${accuracy.toFixed(2)}% accuracy! ${median} letters/s`);
+    }
+
+    function letterPerSecond() {
     }
 
     window.addEventListener('click', () => {
